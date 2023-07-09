@@ -17,6 +17,16 @@
       }
     }
      
+    let obj = {
+  value: "Olá",
+  sayHello: function() {
+    let arrowFunc = () => console.log(this.value);
+    arrowFunc();
+  }
+}
+
+obj.sayHello(); // Olá
+
     
 
 
