@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    setTimeout(() => {
+      console.log('executou o timeout')
+    }, 5000)
+
+   const interval = setInterval(() => {
+      console.log('executou o intervalor')
+    }, 5000)
+
+
+    setTimeout(() => {
+      clearInterval(interval)
+    }, 20000)
+  </script>
+</body>
+</html>

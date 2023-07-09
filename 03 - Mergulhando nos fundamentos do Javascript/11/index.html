@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    const name = 'Julio'
+    const age = 32
+
+    const sentence = 'olá, meu nome é ' + name + ' e eu tenho '  + age
+    + ' anos.'
+
+    const sentence2 = `olá, meu nome é ${name} e eu tenho ${age} anos`
+
+    const html = `
+      <ul>
+        <li>
+          ${name}
+        </li>
+        <li>
+          ${age}
+        </li>
+      </ul>
+    `
+
+    console.log(sentence)
+    console.log(sentence2)
+    console.log(html)
+
+  </script>
+</body>
+</html>
