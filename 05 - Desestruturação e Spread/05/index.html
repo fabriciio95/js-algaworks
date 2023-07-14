@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const parts = ['ombro', 'joelho', 'orelha']
+    const sentence = ['cabeça', parts[0], parts[1], parts[2], 'pés']
+    const sentence2 = ['cabeça', ...parts, 'pés']
+    function createUser(name, age, contact1, contact2, contact3) {
+      return {
+        name,
+        age,
+        contacts: [contact1, contact2, contact3]
+      }
+    }
+      function createUser(name, age, ...contacts) {
+      return {
+        name,
+        age,
+        contacts
+      }
+    }
+      const immutableArray = ['select', '*', 'from', 'posts']
+      const mutableArray = [...immutableArray]
+      mutableArray.push('where id = 1')
+  </script>
+</body>
+</html>
