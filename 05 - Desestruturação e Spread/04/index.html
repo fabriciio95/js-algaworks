@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Document</title>
+</head>
+<body>
+  <script>
+    function createUser(name, age, email) {
+      return {
+        name, 
+        age,
+        contact: { email }
+      }
+    }
+
+    const {name} = createUser('Lucas', 32, 'lucas@mail.com')
+
+    function createUser2({name, age, email}) {
+      return {
+        name, 
+        age,
+        contact: { email }
+      }
+    }
+    
+    const i = createUser2({
+      name: 'Lucas',
+      age: 32,
+      email: 'lucas@mail.com'
+    })
+  </script>
+</body>
+</html>
