@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createUser(name, age, contact1, contact2, contact3) {
+            return {
+                name,
+                age,
+                contacts: [contact1, contact2, contact3]
+            }
+        }
+
+        function createUser2(name, age, contact1, contact2, contact3) {
+            const args = Array.from(arguments)
+            return {
+                name,
+                age,
+                contacts: args.slice(2)
+            }
+        }
+
+        
+        function createUser3(name, age, ...contacts) {
+            const args = Array.from(arguments)
+            return {
+                name,
+                age,
+                contacts: contacts
+            }
+        }
+
+
+    </script>
+</body>
+</html>
