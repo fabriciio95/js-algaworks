@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const ingredients = ['ovo', 'presunto']
+        const spices = ['sal', 'pimenta']
+
+        ingredients.push.apply(ingredients, spices)
+
+        const ingredients2 = ['ovo', 'presunto']
+
+        ingredients2.push(...spices)
+
+        ingredients2.push('alho', 'tomate')
+</script>
+</body>
+</html>
