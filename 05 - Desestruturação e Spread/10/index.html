@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits = ['banana', 'morango', 'manga', 'kiwi', 'maracuja']
+
+        const [firtItem, secondItem, ...otherItems] = fruits
+        const otherItems2 = fruits.slice(2)
+
+
+        const numbers = [1, 2, 3, 4];
+        const [firstNumber, ...restNumbers] = [1, 4, 5];
+
+        console.log(firstNumber);     // Saída: 1
+        console.log(restNumbers);     // Saída: [2, 3, 4]
+
+        const pessoa = {
+        nome: 'João',
+        idade: 30,
+        cidade: 'São Paulo',
+        profissao: 'Engenheiro',
+        };
+
+        const { nome, idade, ...outrasPropriedades } = pessoa;
+
+        console.log(nome);               // 'João'
+        console.log(idade);              // 30
+        console.log(outrasPropriedades);  // { cidade: 'São Paulo', profissao: 'Engenheiro' }
+
+
+        
+    </script>
+</body>
+</html>
