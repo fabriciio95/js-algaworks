@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function handleClick(){
+            throw 'Erro ao executar alguma coisa'
+            return 123
+        }
+
+        async function handleClick2(){
+           setTimeout(() => {
+               return 123
+           }, 5000)
+           return 'batata'
+        }
+
+        function sleep(ms) {
+            return new Promise(
+                resolve => setTimeout(() => resolve(true), ms)
+            )
+        }
+
+        async function handleClick3(){
+           await sleep(5000)
+           return 'batata'
+        }
+
+    </script>
+</body>
+</html>
